@@ -1,0 +1,19 @@
+<h1 align="center"><%= user.name%>'s Call history</h1>
+<table align="center" width="60%">
+  <tr>
+    <th align="center">Caller</th>
+    <th align="center">Callee</th>
+    <th align="center">Start date</th>
+    <th align="center">duration</th>
+  </tr>
+  <% for (var i in callHistory) { %>
+  <tr>
+    <td align="center"><%= callHistory[i].caller %></td>
+    <td align="center"><%= callHistory[i].callee %></td>
+    <td align="center"><%= callHistory[i].start_date %></td>
+    <td align="center"><%= callHistory[i].duration %></td>
+  </tr>
+
+
+  <%}%>
+</table>

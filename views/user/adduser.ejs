@@ -1,0 +1,13 @@
+<h1 align="center">Add user</h1>
+<div align="center">
+  <form method="POST" action="/user/create" name ="addUser" onsubmit="return checkForm()">
+    Email: <input type="email" name="email" placeholder="@" required="true" id="email">
+    <p></p>
+    Name: <input type="text" name="name" placeholder="Jane Doe" id="name">
+    <p></p>
+    <div id="phoneError"></div>
+    Phone number: <input type="text" name="phoneNumber" required="true" id="phoneNumber">
+    <p></p>
+    <input type="submit" value="submit">
+  </form>
+</div>

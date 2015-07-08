@@ -1,0 +1,12 @@
+<h1 align="center">Update profile</h1>
+<div align="center">
+  <form method="POST" action="/user/update/<%= user.id%>">
+    Email: <input type="email" name="email" value="<%= user.email%>">
+    <p></p>
+    Name: <input type="text" name="name" value="<%= user.name%>">
+    <p></p>
+    Phone number: <input type="text" value="<%= user.phoneNumber%>" disabled>
+    <p></p>
+    <input type="submit" value="submit">
+  </form>
+</div>

@@ -1,0 +1,14 @@
+
+<div id="navbar" align="center">
+  <ul>
+    <li><a href="/user/find">Profile</a></li>
+    <li><a href="/listCalls/find">Call history</a></li>
+    <% if (sails.config.globals.user.role == 'operator') {%>
+    <li><a href="/user/listAllUsers">List all users</a></li>
+    <li><a href="/user/addUser">Add new user</a></li>
+    <%}%>
+    <li><a href="/logout">logout</a></li>
+
+  </ul>
+
+</div>

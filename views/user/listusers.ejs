@@ -1,0 +1,24 @@
+
+
+<table align="center" width="60%">
+  <tr>
+    <th align="center">Name</th>
+    <th align="center">Email</th>
+    <th align="center">Phone Number</th>
+    <th align="center">Call History</th>
+    <th align="center">Edit</th>
+    <th align="center">Delete</th>
+  </tr>
+  <% for (var i in users) { %>
+  <tr>
+    <td align="center"><%= users[i].name %></td>
+    <td align="center"><%= users[i].email %></td>
+    <td align="center"><%= users[i].phoneNumber %></td>
+    <td align="center"><a href='/listCalls/find/<%= users[i].id %>'>Call history</a></td>
+    <td align="center"><a href='/user/update/<%= users[i].id %>'>Edit</a></td>
+    <td align="center"><a href='/user/delete/<%= users[i].id %>'>Delete</a></td>
+  </tr>
+
+
+  <%}%>
+</table>

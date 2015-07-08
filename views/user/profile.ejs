@@ -1,0 +1,32 @@
+
+<div align="center">
+<table align="center" width="40%">
+  <tr>
+    <td>Name:</td>
+    <td></td>
+    <td><%= user.name %></td>
+  </tr>
+  <tr>
+    <td>Email:</td>
+    <td></td>
+    <td><%= user.email %></td>
+  </tr>
+  <tr>
+    <td>Phone number:</td>
+    <td></td>
+    <td><%= user.phoneNumber %></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td><form method="get" action="/user/update/<%= user.id%>">
+        <button type="submit">Edit profile</button>
+        </form>
+    </td>
+    <td></td>
+  </tr>
+
+</table>
+
+
+
+</div>
