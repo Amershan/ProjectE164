@@ -1,7 +1,7 @@
 # ProjectE164
 
 Dependencies:
-Python 2.7.10
+Python 2.7.6
 Node.js >= V0.10
 PostgreSQL >= 9.3
 make
@@ -12,7 +12,7 @@ Dependencie installation on Ubuntu or debian based linux:
 ```sh
 $ sudo apt-get update
 $ curl -sL https://deb.nodesource.com/setup | sudo bash -
-$ sudo apt-get install install python2.7.10 postgresql make gcc git
+$ sudo apt-get install python2.7.6 postgresql make gcc git
 ```
 
 #Usage
