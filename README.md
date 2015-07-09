@@ -8,12 +8,21 @@ make
 gcc
 git
 
-Dependencie installation on Ubuntu or debian based linux: 
+#Dependencie installation on Ubuntu or debian based linux: 
+
 ```sh
 $ sudo apt-get update
 $ curl -sL https://deb.nodesource.com/setup | sudo bash -
 $ sudo apt-get install python2.7.6 postgresql make gcc git
 ```
+
+#Database setup
+in the dbBackup folder there are two files.
+dbwouser.sql - dump without the owner user
+testDB.sql - full dump with owner data
+
+If you are importing the 2nd one you need to create project sql user with the password project.
+If you are using the first one, you need to alter the config/connections.js accordingly to your sql database settings 
 
 #Usage
 
