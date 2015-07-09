@@ -18,14 +18,13 @@ $ sudo apt-get install python2.7.6 postgresql make gcc git
 #Usage
 
 ```sh
-$ git clone [git-repo-url]
+$ git clone https://github.com/Amershan/ProjectE164.git
 $ cd ProjectE164
 $ npm install -g sails
 $ npm install (may require sudo rights for his steps)
 $ sails lift
 ```
 open [localhost] - localhost:1337
-
 [localhost]: http://localhost:1337
 [ProjectE164]: http://github.com/Amershan/ProjectE164
 
