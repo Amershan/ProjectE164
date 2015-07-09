@@ -49,15 +49,17 @@ module.exports = {
     var regex = /^\+?[1-9]\d{1,14}$/;
     req.body.role = 'user';
 
-      if (regex.test(req.body.phoneNnumber)){
+      if (regex.test(req.body.phoneNumber)){
         User.create(req.body).exec(function (err, user){
           if (!!err) {
             return res.json(err);
           }
           return res.redirect('/user/listAllUsers');
         });
+      } else {
+        return res.json({Error: 'Not a valid phone number'})
+
       }
-      return res.json({Error: 'Not a valid phone number'})
   },
 
   update: function (req, res) {
